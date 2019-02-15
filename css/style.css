@@ -1,0 +1,161 @@
+a.current{
+	font-size: 150%;
+	text-decoration: underline;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #000000;
+  padding: 10px;
+}
+
+a.skip-main {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+a.skip-main:focus, a.skip-main:active {
+    color: #fff;
+    background-color:#000;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow:auto;
+    margin: 10px 35%;
+    padding:5px;
+    border-radius: 15px;
+    border:4px solid yellow;
+    text-align:center;
+    font-size:1.2em;
+    z-index:999;
+}
+
+body, div, p, a{
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    margin:  10px;
+    border: 10px;
+    padding: 10px;
+}
+
+i{
+    padding: 12px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li.topbar {
+  display: inline;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.grid-container img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    display: grid;
+    margin: 10px;
+    grid-template-columns: [first-col] 175px [second-col] 15px [third-col] 400px [fourth-col] 400px [fifth-col];
+    grid-template-rows: [firstrow] 175px [secondrow] 175px [thirdrow] 175px [fourthrow] 175px [fifthrow];
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 10px 10px;
+}
+
+.sidebar1{
+    grid-column-start: first-col;
+    grid-column-end: second-col;
+    grid-row-start: secondrow;
+    grid-row-end: thirdrow;
+
+    width: 62%;
+    height:100%;
+}
+
+.sidebar2{
+    grid-column-start: first-col;
+    grid-column-end: second-col;
+    grid-row-start: thirdrow;
+    grid-row-end: fourthrow;
+
+}
+
+.sidebar3{
+    grid-column-start: first-col;
+    grid-column-end: second-col;
+    grid-row-start: fourthrow;
+    grid-row-end: fifthrow;
+}
+
+.divider{
+    grid-column-start: second-col;
+    grid-column-end: third-col;
+    grid-row-start: firstrow;
+    grid-row-end: fifthrow;
+    justify-self: center stretch;
+    height: 750px;
+}
+
+.topbar{
+    grid-column-start: second-col;
+    grid-column-end: fifth-col;
+    grid-row-start: firstrow;
+    grid-row-end: secondrow;
+    place-self: center stretch;
+    justify-self: end;
+}
+
+.content{
+    grid-column-start: third-col;
+    grid-column-end: fifth-col;
+    grid-row-start: secondrow;
+    grid-row-end: fifthrow;
+    overflow:scroll;
+}
+
+.imgs{
+    display: inline-block;
+    width: 25%;
+    height: 33%;
+
+}
+
+.form{
+    background-image: url('../images/contact-background.png');
+    opacity: 0.5;
+    width:  100%;
+}
+
+
+
+
+
+
+
+
+
+
+
